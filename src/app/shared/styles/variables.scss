@@ -1,0 +1,12 @@
+$main-bg-color: #0072bc;
+$header-bg-color: darken(desaturate(adjust-hue($main-bg-color, 20), 42.50), 5.49); // #223b7e;
+$color: lighten(desaturate(adjust-hue($main-bg-color, 8), 27.41), 1.76); // #1b5eaa;
+
+$white: #fff;
+
+$title-color: lighten(desaturate(adjust-hue($main-bg-color, -2), 23.93), 9.02); // #1c8ece;
+$text-color: darken(desaturate(adjust-hue($main-bg-color, 20), 42.50), 5.49); // #223b7e;
+$link-color: lighten(desaturate(adjust-hue($main-bg-color, -1), 37.25), 14.71); // #3697d1;
+
+$font: 'segoeUI', san-serif;
+$font-size: 16px;

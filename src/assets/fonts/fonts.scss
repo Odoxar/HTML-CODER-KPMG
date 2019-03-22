@@ -1,0 +1,22 @@
+$font-path: '/assets/fonts/';
+$font-path-segoe: $font-path+'segoeUi/';
+@font-face {
+  font-family: "segoeUI";
+  src: url($font-path-segoe + "bold/segoeui.eot");
+  src: url($font-path-segoe + "bold/segoeui.eot?#iefix") format("embedded-opentype"),  
+        url($font-path-segoe + "bold/segoeui.woff") format("woff"), 
+        url($font-path-segoe + "bold/segoeui.svg#SegoeUI") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'segoeUI';
+  src: url($font-path-segoe + 'normal/segoeui.eot');
+  src: url($font-path-segoe + 'normal/segoeui.woff') format('woff'),  
+       url($font-path-segoe + 'normal/segoeui.eot?#iefix') format('embedded-opentype'),
+       url($font-path-segoe + 'normal/segoeui.svg#SegoeUI') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
