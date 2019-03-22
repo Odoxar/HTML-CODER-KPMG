@@ -1,0 +1,10 @@
+<div class="link__wrap d-flex justify-content-between">
+  <a 
+    *ngFor="let link of links" 
+    [routerLink]="link.link" 
+    routerLinkActive="link_active"
+    class="link"
+  >
+    {{link.name}}
+  </a>
+</div>

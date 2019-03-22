@@ -1,0 +1,17 @@
+<div class="lang__container">
+  <div class="lang__overlay" *ngIf="open" (click)="open = false"></div>
+  <div class="lang__dropdown d-flex flex-column" *ngIf="open">
+    <button 
+      [class.lang_active]="code === openCode" 
+      class="lang__btn lang__code" 
+      *ngFor="let code of codes"
+      (click)="getLang(code)"
+    >
+      {{code}}
+    </button>
+  </div>
+        <button class="lang__btn" (click)="toggleLang()">
+          <span class="lang__btn_code">{{openCode}}</span>
+          <img src="./assets/images/lang-arrow.png" alt="" class="lang__arrow" />
+        </button>
+</div>

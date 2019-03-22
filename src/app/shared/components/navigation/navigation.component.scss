@@ -1,0 +1,18 @@
+@import './src/app/shared/styles/variables.scss';
+
+.link {
+  color: $white;
+  font-size: 0.75rem;
+  padding-bottom: 4px;
+  &__wrap {
+    width: 225px;
+  }
+  &_active {
+    border-bottom: 1px solid $white;
+  }
+  &:hover {
+    text-decoration: none;
+    @extend .link_active;
+  }
+}
+

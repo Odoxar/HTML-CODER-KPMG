@@ -1,0 +1,31 @@
+@import './src/app/shared/styles/variables.scss';
+
+.header {
+  background-color: $header-bg-color;
+  padding: 27px 0;
+  &__title {
+    padding-left: 13px;
+
+  }
+  &-nav {
+    padding-left: 20px;
+  }
+  &__btn {
+    padding-left: 8px;
+  }
+}
+
+.btn {
+  &__challenge {
+    text-transform: uppercase;
+    color: $white;
+    padding: 11px 30px;
+    border: 1px solid $title-color;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: $hover-speed;
+    &:hover {
+      background-color: $title-color;
+    }
+  }
+}

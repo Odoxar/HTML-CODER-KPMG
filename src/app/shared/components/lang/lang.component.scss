@@ -1,0 +1,41 @@
+@import './src/app/shared/styles/variables.scss';
+
+.lang {
+  position: relative;
+  &__btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    &_code {
+      color: $white;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+  }
+
+  &__code {
+    @extend .lang__btn_code;
+    padding: 5px 15px;
+    transition: $hover-speed ease-in;
+    &:hover {
+    @extend .lang_active;
+  }
+  }
+  &__dropdown {
+    position: absolute;
+    background-color: $header-bg-color;
+    border: 1px solid $link-color
+  }
+  &_active {
+    color: $link-color;
+  }
+  &__overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
